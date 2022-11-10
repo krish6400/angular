@@ -1,0 +1,43 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <img src="assets/images/logo.png" alt="logo" height="3%" width="3%" routerLink="home">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="home">Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" routerLink="#" role="button" aria-haspopup="true" aria-expanded="false">Category</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="face">Face</a>
+            <a class="dropdown-item" routerLink="body">Body</a>
+            <a class="dropdown-item" routerLink="hair">Hair</a>
+            <a class="dropdown-item" routerLink="perfume">Perfumes</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact">Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        
+        <button class="btn btn-primary" id="login" routerLink="login">login</button>
+        <button class="btn btn-primary" id="register" routerLink="register">Register</button>
+        
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+

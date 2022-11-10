@@ -1,0 +1,26 @@
+<marquee>Login or Register Before You View Products</marquee>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transparent Login Form HTML CSS</title>
+	<link href="login.component.css" rel="stylesheet">
+</head>
+<body>
+  <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)" novalidate>
+	<div class="form-box">
+		<div class="header-text">
+		</div>
+    <input placeholder="Your Email Address" type="text" name="email" ngModel #email="ngModel"   required/>
+     <input placeholder="Your Password" type="password"name="password" ngModel #password="ngModel" required> 
+
+      <button [disabled] ="!loginForm.valid" >login</button>
+	  <!-- <button onclick="myFunction()">login</button> -->
+
+	  
+	</div>
+</form>
+</body>
+</html>

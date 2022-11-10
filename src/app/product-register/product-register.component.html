@@ -1,0 +1,109 @@
+<app-userheader></app-userheader>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("assets/images/register.jpg");
+
+  min-height: 780px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-img">
+  <form class="container" #productForm = "ngForm" (ngSubmit)="registerProduct(productForm.value)" novalidate>
+
+    <label for="cat_id"><b>Cat_id</b></label>
+    <input type="text" name="cat_id" ngModel #name="ngModel" required >
+
+    <label for="brand"><b>Brand</b></label>
+    <input type="text" name="brand" ngModel #name="ngModel" required>
+
+    <label for="image"><b>Image</b></label>
+    <input type="text"  name="image" ngModel #name="ngModel" required>
+
+    <label for="mfg"><b>mfg</b></label>
+    <input type="date" name="mfg" ngModel #name="ngModel" required>
+    <br>
+    <label for="mrp"><b>mrp</b></label>
+    <input type="text" name="mrp" ngModel #name="ngModel" required>
+
+    <label for="name"><b>name</b></label>
+    <input type="text" name="name" ngModel #name="ngModel" required>
+
+    <label for="quantity"><b>quantity</b></label>
+    <input type="text" name="quantity" ngModel #name="ngModel" required>
+
+    <label for="choose"><b>choose</b></label>
+    <select name="category" ngModel>
+      <option value="Hair">Hair</option>
+      <option value="Face">Face</option>
+      <option value="Body">Body</option>
+      <option value="Perfume">Perfume</option>
+    </select>
+    <button type="submit" class="btn">Register</button>
+  </form>
+</div>
+
+
+</body>
+</html>

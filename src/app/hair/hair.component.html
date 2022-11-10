@@ -1,0 +1,19 @@
+<app-userheader></app-userheader>
+
+<div class="row">
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6" *ngFor = "let hair of hair">
+        <div class="card">
+            <div class="card-header">
+                <img src = "{{hair.image}}" height="300px" width="300px">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">{{hair.brand}}</h4>
+                <p class="card-text">{{hair.name}}</p>
+            </div>
+            <div class="card-footer">
+                {{hair.mrp}}<br>
+                <button class="btn btn-primary">Add to cart</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,131 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <img src="assets/images/logo.png" alt="logo" height="3%" width="3%" routerLink="home">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="home">Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" routerLink="#" role="button" aria-haspopup="true" aria-expanded="false">Category</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="login">Face</a>
+            <a class="dropdown-item" routerLink="login">Body</a>
+            <a class="dropdown-item" routerLink="login">Hair</a>
+            <a class="dropdown-item" routerLink="login">Perfumes</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="login">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="login">Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        
+        <button class="btn btn-primary" id="login" routerLink="login">login</button>
+        <button class="btn btn-primary" id="register" routerLink="register">Register</button>
+        <span class="glyphicon glyphicon-user"></span>
+        
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active " style="height: 400px;" >
+      <img src="assets/images/carousel1.png"  style="height: 400px;" class="d-block w-100" alt="no image">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/carousel2.jpg" style="height: 400px;" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/carousel3.jpg" style="height: 400px;" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div class="row" >
+  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6" >
+    <div class="card" style="height:50px;width:300px">
+    
+        <img src="assets/images/grid1.jpg" height="300px" width="300px">
+    
+    <div class="card-body">
+        <h4 class="card-title">Hair Products</h4>
+        <p class="card-text">Tresemme</p>
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-primary" routerLink="login">View More</button>
+    </div> 
+        </div>
+    </div>
+  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6" >
+      <div class="card" style="height:50px;width:300px">
+     
+          <img src="assets/images/grid2.jpg" height="300px" width="300px" routerLink="face">
+   
+      <div class="card-body">
+          <h4 class="card-title">Face Products</h4>
+          <p class="card-text">Lip Stick</p>
+      </div>
+      <div class="card-footer">
+          <button class="btn btn-primary" routerLink="login">View More</button>
+      </div> 
+          </div>
+      </div>
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6" >
+              <div class="card" style="height:50px;width:300px">
+            
+                  <img src="assets/images/grid3.jpg" height="300px" width="300px">
+           
+              <div class="card-body">
+                  <h4 class="card-title">Body Products</h4>
+                  <p class="card-text">OLAY</p>
+              </div>
+              <div class="card-footer">
+                  <button class="btn btn-primary" routerLink="login">View More</button>
+              </div>
+                  </div>
+              </div>
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6" >
+                      <div class="card" style="height:50px;width:300px">
+                      
+                          <img src="assets/images/perfume3.jpg" height="300px" width="300px">
+                     
+                      <div class="card-body">
+                          <h4 class="card-title">Perfumes</h4>
+                          <p class="card-text">Dazzle</p>
+                      </div>
+                      <div class="card-footer">
+                          <button class="btn btn-primary" routerLink="login">View More</button>
+                          
+            
+                      </div>
+                         </div>
+                
+                          </div> 
+
+

@@ -1,0 +1,19 @@
+<app-userheader></app-userheader>
+
+<div class="row">
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6" *ngFor = "let perfume of perfume">
+        <div class="card">
+            <div class="card-header">
+                <img src = "{{perfume.image}}" height="300px" width="300px">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">{{perfume.brand}}</h4>
+                <p class="card-text">{{perfume.name}}</p>
+            </div>
+            <div class="card-footer">
+                {{perfume.mrp}}<br>
+                <button class="btn btn-primary">Add to cart</button>
+            </div>
+        </div>
+    </div>
+</div>
